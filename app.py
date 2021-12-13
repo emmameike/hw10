@@ -12,7 +12,7 @@ credential = DefaultAzureCredential()
 client = SecretClient(vault_url=AZURE_KEY_VAULT_URL, credential=credential)
 
 _dbhostname = client.get_secret('HW10-DBHOSTNAME')
-_dbusername = client.get_secret('HW10-DBUSERNAME')
+_dbusername = client.get_secret('HW10-USERNAME')
 _dbpassword = client.get_secret('HW10-DBPASSWORD1')
 _dbname = client.get_secret('HW10-DBNAME')
 _secret = client.get_secret('HW10-SECRET-KEY')
